@@ -1,0 +1,352 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Mouse",
+    "price": 799,
+    "category": "Electronics",
+    "quantity": 1000
+  },
+  {
+    "id": 2,
+    "name": "Mechanical Keyboard",
+    "price": 2499,
+    "category": "Electronics",
+    "quantity": 1000
+  },
+  {
+    "id": 3,
+    "name": "USB-C Cable",
+    "price": 299,
+    "category": "Accessories",
+    "quantity": 1000
+  },
+  {
+    "id": 4,
+    "name": "Laptop Stand",
+    "price": 899,
+    "category": "Accessories",
+    "quantity": 1000
+  },
+  {
+    "id": 5,
+    "name": "Bluetooth Speaker",
+    "price": 1599,
+    "category": "Audio",
+    "quantity": 1000
+  },
+  {
+    "id": 6,
+    "name": "Noise Cancelling Headphones",
+    "price": 4999,
+    "category": "Audio",
+    "quantity": 1000
+  },
+  {
+    "id": 7,
+    "name": "Smartwatch",
+    "price": 3499,
+    "category": "Wearables",
+    "quantity": 1000
+  },
+  {
+    "id": 8,
+    "name": "Fitness Band",
+    "price": 1499,
+    "category": "Wearables",
+    "quantity": 1000
+  },
+  {
+    "id": 9,
+    "name": "Portable SSD 1TB",
+    "price": 6999,
+    "category": "Storage",
+    "quantity": 1000
+  },
+  {
+    "id": 10,
+    "name": "32GB Pen Drive",
+    "price": 399,
+    "category": "Storage",
+    "quantity": 1000
+  },
+  {
+    "id": 11,
+    "name": "LED Desk Lamp",
+    "price": 899,
+    "category": "Home",
+    "quantity": 1000
+  },
+  {
+    "id": 12,
+    "name": "Water Bottle Steel",
+    "price": 499,
+    "category": "Home",
+    "quantity": 1000
+  },
+  {
+    "id": 13,
+    "name": "Electric Kettle",
+    "price": 1299,
+    "category": "Appliances",
+    "quantity": 1000
+  },
+  {
+    "id": 14,
+    "name": "Toaster",
+    "price": 999,
+    "category": "Appliances",
+    "quantity": 1000
+  },
+  {
+    "id": 15,
+    "name": "Phone Stand",
+    "price": 199,
+    "category": "Accessories",
+    "quantity": 1000
+  },
+  {
+    "id": 16,
+    "name": "Android Phone Charger",
+    "price": 599,
+    "category": "Electronics",
+    "quantity": 1000
+  },
+  {
+    "id": 17,
+    "name": "iPhone Lightning Cable",
+    "price": 999,
+    "category": "Electronics",
+    "quantity": 1000
+  },
+  {
+    "id": 18,
+    "name": "Smart LED Bulb",
+    "price": 799,
+    "category": "Home Automation",
+    "quantity": 1000
+  },
+  {
+    "id": 19,
+    "name": "WiFi Router",
+    "price": 1599,
+    "category": "Networking",
+    "quantity": 1000
+  },
+  {
+    "id": 20,
+    "name": "HD Webcam",
+    "price": 1299,
+    "category": "Electronics",
+    "quantity": 1000
+  },
+  {
+    "id": 21,
+    "name": "Gaming Chair",
+    "price": 9999,
+    "category": "Furniture",
+    "quantity": 1000
+  },
+  {
+    "id": 22,
+    "name": "Office Chair",
+    "price": 5999,
+    "category": "Furniture",
+    "quantity": 1000
+  },
+  {
+    "id": 23,
+    "name": "Notebook A5",
+    "price": 129,
+    "category": "Stationery",
+    "quantity": 1000
+  },
+  {
+    "id": 24,
+    "name": "Ball Pen Pack of 10",
+    "price": 99,
+    "category": "Stationery",
+    "quantity": 1000
+  },
+  {
+    "id": 25,
+    "name": "Whiteboard Marker Set",
+    "price": 249,
+    "category": "Stationery",
+    "quantity": 1000
+  },
+  {
+    "id": 26,
+    "name": "Yoga Mat",
+    "price": 899,
+    "category": "Fitness",
+    "quantity": 1000
+  },
+  {
+    "id": 27,
+    "name": "Dumbbells 5kg",
+    "price": 1499,
+    "category": "Fitness",
+    "quantity": 1000
+  },
+  {
+    "id": 28,
+    "name": "Protein Shaker",
+    "price": 299,
+    "category": "Fitness",
+    "quantity": 1000
+  },
+  {
+    "id": 29,
+    "name": "Backpack",
+    "price": 1199,
+    "category": "Bags",
+    "quantity": 1000
+  },
+  {
+    "id": 30,
+    "name": "Travel Duffel Bag",
+    "price": 1799,
+    "category": "Bags",
+    "quantity": 1000
+  },
+  {
+    "id": 31,
+    "name": "Sunglasses",
+    "price": 499,
+    "category": "Fashion",
+    "quantity": 1000
+  },
+  {
+    "id": 32,
+    "name": "Men’s Wallet",
+    "price": 699,
+    "category": "Fashion",
+    "quantity": 1000
+  },
+  {
+    "id": 33,
+    "name": "Women’s Handbag",
+    "price": 1499,
+    "category": "Fashion",
+    "quantity": 1000
+  },
+  {
+    "id": 34,
+    "name": "T-Shirt Cotton",
+    "price": 499,
+    "category": "Clothing",
+    "quantity": 1000
+  },
+  {
+    "id": 35,
+    "name": "Hoodie",
+    "price": 1299,
+    "category": "Clothing",
+    "quantity": 1000
+  },
+  {
+    "id": 36,
+    "name": "Sneakers",
+    "price": 1999,
+    "category": "Footwear",
+    "quantity": 1000
+  },
+  {
+    "id": 37,
+    "name": "Sandals",
+    "price": 799,
+    "category": "Footwear",
+    "quantity": 1000
+  },
+  {
+    "id": 38,
+    "name": "Wired Earphones",
+    "price": 299,
+    "category": "Audio",
+    "quantity": 1000
+  },
+  {
+    "id": 39,
+    "name": "Car Phone Holder",
+    "price": 399,
+    "category": "Automotive",
+    "quantity": 1000
+  },
+  {
+    "id": 40,
+    "name": "Car Vacuum Cleaner",
+    "price": 1599,
+    "category": "Automotive",
+    "quantity": 1000
+  },
+  {
+    "id": 41,
+    "name": "Pet Toy Ball",
+    "price": 199,
+    "category": "Pets",
+    "quantity": 1000
+  },
+  {
+    "id": 42,
+    "name": "Cat Litter Scoop",
+    "price": 149,
+    "category": "Pets",
+    "quantity": 1000
+  },
+  {
+    "id": 43,
+    "name": "Plant Pot Ceramic",
+    "price": 399,
+    "category": "Garden",
+    "quantity": 1000
+  },
+  {
+    "id": 44,
+    "name": "Soil Mix 5kg",
+    "price": 249,
+    "category": "Garden",
+    "quantity": 1000
+  },
+  {
+    "id": 45,
+    "name": "LED Strip Light 5m",
+    "price": 999,
+    "category": "Home Decor",
+    "quantity": 1000
+  },
+  {
+    "id": 46,
+    "name": "Wall Clock",
+    "price": 699,
+    "category": "Home Decor",
+    "quantity": 1000
+  },
+  {
+    "id": 47,
+    "name": "Electric Screwdriver",
+    "price": 1599,
+    "category": "Tools",
+    "quantity": 1000
+  },
+  {
+    "id": 48,
+    "name": "Hammer",
+    "price": 299,
+    "category": "Tools",
+    "quantity": 1000
+  },
+  {
+    "id": 49,
+    "name": "Drill Machine",
+    "price": 2499,
+    "category": "Tools",
+    "quantity": 1000
+  },
+  {
+    "id": 50,
+    "name": "Extension Board 4 Socket",
+    "price": 499,
+    "category": "Electronics",
+    "quantity": 1000
+  }
+]
