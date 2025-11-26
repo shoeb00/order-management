@@ -12,6 +12,8 @@ import { Database } from './interfaces/database.interface';
         orders: [],
         coupons: [],
         carts: [],
+        couponCycle: 3,
+        discountPercentage: 10,
       }),
     },
   ],

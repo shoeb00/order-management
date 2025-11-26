@@ -1,13 +1,20 @@
+import { OrderService } from './../order/order.service';
 import { BadRequestException, Inject, Injectable } from '@nestjs/common';
 import { Database } from 'src/database/interfaces/database.interface';
-import { Product } from 'src/product/interfaces/product.interface';
 import { Cart } from './interfaces/cart.interface';
 import { DATABASE } from 'src/database/token';
 import { UpdateCartRequestDto } from './dto/updateCartRequest.dto';
+import { CommonService } from 'src/common/common.service';
+import { CouponService } from 'src/coupon/coupon.service';
 
 @Injectable()
 export class CartService {
-  constructor(@Inject(DATABASE) private readonly db: Database) {}
+  constructor(
+    @Inject(DATABASE) private readonly db: Database,
+    private readonly commonService: CommonService,
+    private readonly couponService: CouponService,
+    private readonly orderService: OrderService,
+  ) {}
 
   async getCart(userId: number): Promise<Cart> {
     const cart = this.db.carts.find((cart) => cart.userId === userId);
@@ -19,7 +26,7 @@ export class CartService {
     const cart = this.db.carts.find((cart) => cart.userId === userId);
     if (!cart)
       this.db.carts.push({
-        id: this.db.carts.length + 1,
+        id: this.commonService.getUID(),
         userId,
         products: [],
         numberOfProducts: 0,
@@ -50,9 +57,28 @@ export class CartService {
     return cart;
   }
 
-  async checkout(userId: number): Promise<void> {
+  async checkout(userId: number, couponCode?: string): Promise<void> {
     const cart = await this.getCart(userId);
-    // create order for this cart
+    if (!cart.products.length) throw new BadRequestException('Cart is empty');
+    const orderId = this.db.orders.length + 1;
+    if (couponCode && orderId % this.db.couponCycle)
+      throw new BadRequestException('Coupon not applicable for this order');
+    const order = {
+      id: this.db.orders.length + 1,
+      userId,
+      products: cart.products,
+      quantity: cart.numberOfProducts,
+      totalPrice: cart.totalPrice,
+      discountedAmount: 0,
+    };
+    if (couponCode) {
+      await this.couponService.useCoupon(couponCode, orderId);
+      order.discountedAmount =
+        cart.totalPrice * (this.db.discountPercentage / 100);
+      order.totalPrice -= order.discountedAmount;
+    }
+    await this.orderService.createOrder(order);
+    await this.clearCart(userId);
     return;
   }
 
