@@ -16,4 +16,15 @@ describe('CommonService', () => {
   it('should be defined', () => {
     expect(service).toBeDefined();
   });
+
+  it('should generate random string', () => {
+    const result = service.generateRandomString(6);
+    expect(result).toHaveLength(6);
+  });
+
+  it('should generate UID', () => {
+    const result = service.getUID(6);
+    expect(result).toBeGreaterThanOrEqual(100000);
+    expect(result).toBeLessThanOrEqual(999999);
+  });
 });
